@@ -2,14 +2,14 @@
 <div id="app">
   <div class="welcome wrapper">
     <div class="welcome_image"></div>
-    <div class="welcome_message">Hi, I am {{Admin.name}}!</div>
+    <div class="welcome_message">Hello, I am {{Admin.name}}!</div>
   </div>
   <div class="form wrapper">
     <div class="question">What is your name?</div>
     <input class="username" type="text"/>
     <button>✓</button>
     <!--<div class="debug"><strong>User.name</strong> {{User.name}}</div>-->
-    <!--<div class="greeting" v-if="showGreeting">{{greeting}}, {{User.name}}!</div>-->
+    <!--<div class="greeting" v-if="showGreeting">Hi, {{User.name}}!</div>-->
   </div>
 </div>
 </template>
@@ -102,17 +102,14 @@ export default {
       Admin : {
         name : 'Alexander',
       },
-      greeting : 'Hello',
-      showGreeting : false,
       User : {
         name : ''
-      }
+      },
+      // showGreeting : false
     }
   },
   methods: {
     login() {
-      console.info('login()')
-      this.showGreeting = true
     }
   }
 }
