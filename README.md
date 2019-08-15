@@ -15,5 +15,5 @@ npm run dev
 ### Requirements/setup
 
 ```
-see the first video
+See the first video
 ```
