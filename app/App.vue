@@ -106,11 +106,12 @@ export default {
       User : {
         name : 'John'
       },
-      // showGreeting : false
+      showGreeting : false
     }
   },
   methods: {
     login() {
+      this.showGreeting = true
     }
   }
 }
