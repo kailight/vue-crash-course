@@ -7,7 +7,7 @@
   </div>
   <div v-if="!User.haveBeenTryingToLogin" class="form wrapper">
     <div class="question">What is your name?</div>
-    <input class="username" v-model="User.name" :type="getInputType()"/>
+    <input class="username" v-model="User.name" type="text"/>
     <button @click="login">✓</button>
     <!--<div class="debug"><strong>User.name</strong> {{User.name}}</div>-->
   </div>
@@ -19,9 +19,10 @@
       <div class="message2"><a href="#skills">Let me tell you more about things I crave</a></div>
       <div class="skills" id="skills">
         <div class="skill" v-for="skill in Skills">
-          <div class="title">{{skill.title}}</div>
-          <div class="image" :style="skill.style"/>
-          <div class="description" v-html="skill.description">
+          <div class="title">{{title}}</div>
+          <div class="image" :style="style"/>
+          <div class="description">
+            {{description}}
           </div>
         </div>
       </div>
@@ -221,7 +222,6 @@ export default {
   data() {
     // This is the object we are working with
     return {
-      password : true,
       Admin : {
         name : 'Alexander',
       },
@@ -280,9 +280,6 @@ export default {
     },
     failedToLogin() {
       return !this.User.loggedIn && this.User.haveBeenTryingToLogin
-    },
-    getInputType() {
-      return this.password === true ? 'password' : 'text'
     }
   }
 }
