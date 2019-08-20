@@ -10,8 +10,11 @@
 <style lang="stylus">
 @import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
 
+$color-main = #333
+
 body
   color $color-main
+  // font-family Arial, Helvetica, sans-serif
   font-family 'Lexend Deca', Arial, Helvetica, sans-serif
 
 a
