@@ -12,12 +12,11 @@
     "build": "node webpack/build/build.js"
   },
   "dependencies": {
-    "axios": "0.18.0",
-    "dotenv": "8.0.0",
-    "normalize.css": "8.0.0",
     "vue": "2.6.10"
   },
   "devDependencies": {
+    "normalize.css": "8.0.0",
+    "dotenv": "8.0.0",
     "pug": "2.0.3",
     "pug-loader": "2.4.0",
     "stylus": "0.54.5",
