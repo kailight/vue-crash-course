@@ -8,14 +8,6 @@ const vueLoaderConfig = require('./vue-loader.conf')
 let { ROOT, WPROOT, resolve } = require('../dirs')
 
 
-// console.info('testing')
-// C:\dev\tribefire-contest\webpack
-// console.info(path.resolve(__dirname, '../'))
-// C:\dev\tribefire-contest
-// console.info(resolve('..'))
-
-// console.info('testing')
-// console.info(utils.assetsPath('img'))
 
 module.exports = {
   context: ROOT,
