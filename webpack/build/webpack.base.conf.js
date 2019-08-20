@@ -17,13 +17,7 @@ let { ROOT, WPROOT, resolve } = require('../dirs')
 // console.info('testing')
 // console.info(utils.assetsPath('img'))
 
-const VueLoaderPlugin = require('vue-loader/lib/plugin')
-
-
 module.exports = {
-  plugins: [
-    new VueLoaderPlugin()
-  ],
   context: ROOT,
   entry: {
     app: resolve('app/main.js')
@@ -78,7 +72,7 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
-      },
+      }
     ]
   },
   node: {

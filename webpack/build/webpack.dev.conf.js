@@ -24,27 +24,15 @@ rules.push(
   },
   */
   {
-    test: /\.pug$/,
-    oneOf: [
-      // this applies to `<template lang="pug">` in Vue components
-      {
-        resourceQuery: /^\?vue/,
-        use: ['pug-plain-loader']
-      },
-      // this applies to pug imports inside JavaScript
-      {
-        use: ['raw-loader', 'pug-plain-loader']
-      }
-    ]
-  }
+    test: /\.pug$/i,
+    use: ["pug-loader"]
+},
 )
 
 const devWebpackConfig = merge(baseWebpackConfig, {
   module: {
+    // rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })
     rules
-  },
-  resolve: {
-    symlinks: false
   },
   // cheap-module-eval-source-map is faster for development
   devtool: config.dev.devtool,
@@ -76,6 +64,13 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   plugins: [
     new webpack.DefinePlugin({
       'process.env': require('../config/dev.env')
+    }),
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        stylus: {
+          import: [resolve('app/assets/vars.styl')]
+        }
+      }
     }),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(), // HMR shows correct file names in console on update.
