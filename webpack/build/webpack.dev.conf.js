@@ -24,15 +24,27 @@ rules.push(
   },
   */
   {
-    test: /\.pug$/i,
-    use: ["pug-loader"]
-},
+    test: /\.pug$/,
+    oneOf: [
+      // this applies to `<template lang="pug">` in Vue components
+      {
+        resourceQuery: /^\?vue/,
+        use: ['pug-plain-loader']
+      },
+      // this applies to pug imports inside JavaScript
+      {
+        use: ['raw-loader', 'pug-plain-loader']
+      }
+    ]
+  }
 )
 
 const devWebpackConfig = merge(baseWebpackConfig, {
   module: {
-    // rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })
     rules
+  },
+  resolve: {
+    symlinks: false
   },
   // cheap-module-eval-source-map is faster for development
   devtool: config.dev.devtool,
