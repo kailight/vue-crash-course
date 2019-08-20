@@ -3,7 +3,6 @@
 
   <intro :User="User" :Users="Users" :Admin="Admin"></intro>
   <content2 :User="User" :Users="Users" :Skills="Skills"></content2>
-
 </div>
 </template>
 
