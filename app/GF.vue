@@ -1,6 +1,6 @@
 <template>
 <div>
-  Hello, my friend Neo 66.
+  Hello, my sweet gf.
 </div>
 </template>
 

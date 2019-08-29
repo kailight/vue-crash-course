@@ -11,7 +11,7 @@
     </div>
     <content-for-neo class="tab" v-if="loggedInAs('neo66')">
     </content-for-neo>
-    <content-for-gf class="tab" v-if="loggedInAs('gf66')">
+    <content-for-gf class="tab" v-if="loggedInAs('gf55')">
     </content-for-gf>
     <content-for-mom class="tab" v-if="loggedInAs('mom77')">
     </content-for-mom>

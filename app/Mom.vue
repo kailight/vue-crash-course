@@ -1,6 +1,6 @@
 <template>
 <div>
-  Hello, my friend Neo 66.
+  Hi Mom.
 </div>
 </template>
 
