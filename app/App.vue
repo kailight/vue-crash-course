@@ -240,7 +240,7 @@ export default {
     // This is the object we are working with
     return {
       Admin : {
-        name : 'Alexander',
+        name : 'John',
       },
       User : {
         haveBeenTryingToLogin : false,
