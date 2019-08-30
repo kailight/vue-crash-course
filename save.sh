@@ -1,3 +1,5 @@
+#!/bin/bash
+
 git tag -d 5.5
 git add .
 git commit . -m "Lesson #5 Test Result"
