@@ -158,7 +158,7 @@ export default {
       greeting : 'Hello',
       showGreeting : false,
       User : {
-        loggenIn : false,
+        loggedIn : false,
         name : '',
         agreesToConditions : false
       }
