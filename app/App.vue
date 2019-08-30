@@ -4,32 +4,32 @@
     <div class="welcome_image"></div>
     <div class="welcome_message">Hi, I am {{Admin.name}}!</div>
   </div>
-  <div class="form wrapper">
+  <div class="form wrapper" v-if="!User.haveBeenTryingToLogin">
     <div class="question">What is your name?</div>
     <input class="username" v-model="User.name" type="text"/>
     <button @click="login">✓</button>
-    <!--<div class="debug"><strong>User.name</strong> {{User.name}}</div>-->
-    <div class="greeting" v-if="showGreeting">{{greeting}}, {{User.name}}!</div>
-
-    <div class="content" v-if="User.loggedIn">Our secret content</div>
   </div>
   <div class="tabs-wrapper tabs">
-    <div class="tab-controls">
-      <a href="#" @click.prevent="activeTab = 1">Tab 1</a>
-      <a href="#" @click.prevent="activeTab = 2">Tab 2</a>
-      <a href="#" @click.prevent="activeTab = 3">Tab 3</a>
+    <div class="tab-content" v-if="!User.loggedIn && User.haveBeenTryingToLogin">
+      <div>Hi, {{User.name}}!</div>
+      <br><br>
+      <div>Let me tell you more about myself!</div>
+      <br><br>
+      <div style="padding: 2rem; float: left;">I like snowboarding</div>
+      <div style="padding: 2rem; float: left;">I like kittens</div>
+      <div style="padding: 2rem; float: left;">I like cookies</div>
+      <br><br><br><br>
     </div>
-    <div class="tab-content" v-if="!activeTab">
-      No content
-    </div>
-    <div class="tab-content" v-if="activeTab === 1">
-      Tab 1 content
-    </div>
-    <div class="tab-content" v-if="activeTab === 2">
-      Tab 2 content
-    </div>
-    <div class="tab-content" v-if="activeTab === 3">
-      Tab 3 content
+    <div v-if="User.haveBeenTryingToLogin">
+      <div class="tab-content" v-if="User.name === 'John'">
+        Content for John
+      </div>
+      <div class="tab-content" v-if="User.name === 'Mark'">
+        Content for Mark
+      </div>
+      <div class="tab-content" v-if="User.name === 'Ivan'">
+        Content for Ivan
+      </div>
     </div>
   </div>
 </div>
@@ -159,6 +159,7 @@ export default {
       showGreeting : false,
       User : {
         loggedIn : false,
+        haveBeenTryingToLogin : false,
         name : '',
         agreesToConditions : false
       }
@@ -169,7 +170,11 @@ export default {
       console.info('login()')
       if (this.User.name.length > 3) {
         this.showGreeting = true
-        this.User.loggedIn = true
+        this.User.haveBeenTryingToLogin = true
+        let Users = ['John','Mark','Ivan']
+        if (Users.indexOf(this.User.name) > -1) {
+          this.User.loggedIn = true
+        }
       }
     }
   }
