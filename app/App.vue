@@ -20,7 +20,7 @@
       <div class="skills" id="skills">
         <div class="skill">
           <div class="title">Music</div>
-          <div class="image" :style="{ 'background-image' : `url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmY8b8oXw0ZLL0pOG-xBs3y46psTYhW7oiyqTusJ2wsqwio5SX')` } "/>
+          <div class="image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmY8b8oXw0ZLL0pOG-xBs3y46psTYhW7oiyqTusJ2wsqwio5SX')" />
           <div class="description">
             <p>I play guitar in a rock band.</p>
             <p>Our next gig going to be on sunday. Jump in!</p>
