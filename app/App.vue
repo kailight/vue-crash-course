@@ -16,7 +16,7 @@
   <div class="tabs-wrapper tabs">
     <div class="tab-content unknown_user" v-if="failedToLogin()">
       <div class="message1">{{User.name}}? Nice to meet you!</div>
-      <div class="message2"><a href="#skills">Let me tell you more about things I crave</a></div>
+      <div class="message2"><a href="#skills">Let me tell you more about things I like</a></div>
       <div class="skills" id="skills">
         <div class="skill">
           <div class="title">Music</div>
