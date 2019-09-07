@@ -10,10 +10,8 @@
 
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
-
 #app {
-  font-family : 'Lexend Deca', Arial, Helvetica, sans-serif;
+  font-family : Arial, Helvetica, sans-serif;
   color: #333;
 }
 
@@ -25,7 +23,6 @@ a {
 
 
 <script>
-import Users from './Users.js'
 import Intro from './Intro.vue'
 import Content from './Content.vue'
 
@@ -43,7 +40,7 @@ export default {
         name : '',
         agreesToConditions : false
       },
-      Users : Users,
+      Users : ['neo66','Mark','Ivan'],
       showGreeting : false
     }
   },
