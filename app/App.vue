@@ -23,13 +23,13 @@ a {
 
 
 <script>
-import Intro from './Intro.vue'
+import Intro from './components/Intro.vue'
 import Content from './Content.vue'
 
 export default {
   components : {
     'intro' : Intro,
-    'content2' : Content,
+    'content2' : Content
   },
   data() {
     // This is the object we are working with
