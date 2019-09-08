@@ -23,7 +23,7 @@ a {
 
 
 <script>
-import Intro from './components/Intro.vue'
+import Intro from './Intro.vue'
 import Content from './Content.vue'
 
 export default {
