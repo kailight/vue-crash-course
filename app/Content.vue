@@ -11,10 +11,12 @@
     </div>
     <content-for-neo class="tab" v-if="loggedInAs('neo66')">
     </content-for-neo>
-    <content-for-gf class="tab" v-if="loggedInAs('gf66')">
+    <content-for-gf class="tab" v-if="loggedInAs('gf55')">
     </content-for-gf>
     <content-for-mom class="tab" v-if="loggedInAs('mom77')">
     </content-for-mom>
+    <vue-crash-course-help class="tab" v-if="loggedInAs('help88')">
+    </vue-crash-course-help>
   </div>
 </template>
 
@@ -54,13 +56,16 @@
 import ContentForNeo from './Neo.vue'
 import ContentForGF from './GF.vue'
 import ContentForMom from './Mom.vue'
+import ImagesHelp from './ImagesHelp.vue'
 import Skills from './Skills.vue'
+
 
 export default {
   components : {
     'content-for-neo' : ContentForNeo,
     'content-for-gf' : ContentForGF,
     'content-for-mom' : ContentForMom,
+    'vue-crash-course-help' : ImagesHelp,
     'skills' : Skills,
   },
   props : {
