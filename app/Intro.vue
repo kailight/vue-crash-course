@@ -28,6 +28,7 @@
   width: 12rem;
   border-radius: 8rem;
   margin: 1rem auto;
+  /* https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=375&w=630 */
   background-image: url('https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=375&w=630');
   background-size: cover;
   background-position: 50%;
