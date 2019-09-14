@@ -15,8 +15,6 @@
     </content-for-gf>
     <content-for-mom class="tab" v-if="loggedInAs('mom77')">
     </content-for-mom>
-    <vue-crash-course-help class="tab" v-if="loggedInAs('help88')">
-    </vue-crash-course-help>
   </div>
 </template>
 

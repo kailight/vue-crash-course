@@ -40,7 +40,7 @@ export default {
         name : '',
         agreesToConditions : false
       },
-      Users : ['neo66','gf55','mom77','help88'],
+      Users : ['neo66','gf55','mom77'],
       showGreeting : false
     }
   },
