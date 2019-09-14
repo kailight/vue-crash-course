@@ -63,7 +63,6 @@ export default {
     'content-for-neo' : ContentForNeo,
     'content-for-gf' : ContentForGF,
     'content-for-mom' : ContentForMom,
-    'vue-crash-course-help' : ImagesHelp,
     'skills' : Skills,
   },
   props : {
