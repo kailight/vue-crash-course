@@ -54,7 +54,6 @@
 import ContentForNeo from './Neo.vue'
 import ContentForGF from './GF.vue'
 import ContentForMom from './Mom.vue'
-import ImagesHelp from './ImagesHelp.vue'
 import Skills from './Skills.vue'
 
 
