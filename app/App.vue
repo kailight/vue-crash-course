@@ -11,7 +11,7 @@
 
 <style>
 #app {
-  font-family : Arial, Helvetica, sans-serif;
+  font-family : 'Lexend Deca', Arial, Helvetica, sans-serif;
   color: #333;
 }
 
