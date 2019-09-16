@@ -4,7 +4,6 @@ Vue.config.productionTip = false
 
 require('normalize.css')
 
-
 window.Vue = new Vue({
   render: h => h(App),
   mounted() {

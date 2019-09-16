@@ -29,7 +29,7 @@
   border-radius: 8rem;
   margin: 1rem auto;
   /* https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=375&w=630 */
-  background-image: url('https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=375&w=630');
+  background-image: url('/assets/avatar.jpeg');
   background-size: cover;
   background-position: 50%;
   border: 1px solid #a9463a;
@@ -84,7 +84,12 @@
 
 
 <script>
+import Datepicker from 'vue-moment-datepicker'
+
 export default {
+  components: {
+    Datepicker
+  },
   props : {
     User: Object,
   },
