@@ -19,7 +19,7 @@ div.background
   height 95vh
   display flex
   /* https://www.pexels.com/photo/empty-road-2419320/ */
-  background-image url('background-tatoo.jpg')
+  background-image url('/assets/background-tatoo.jpg')
   background-repeat no-repeat
   background-position 50%
   background-size cover
@@ -43,7 +43,7 @@ div.background
         width 100%
         height 100%
         /* https://www.pexels.com/photo/cull-pistol-establishment-during-nighttime-2260824/ */
-        background-image url('bar2.jpg')
+        background-image url('/assets/bar2.jpg')
         background-repeat no-repeat
         background-position top left
         background-size cover
