@@ -15,6 +15,7 @@ const PORT = process.env.PORT && Number(process.env.PORT)
 
 let { ROOT, WPROOT, resolve } = require('../dirs')
 
+
 let rules = utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })
 rules.push(
   /*
@@ -77,7 +78,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     // copy custom static assets
     new CopyWebpackPlugin([
       {
-        from: path.resolve(__dirname, '../static'),
+        from: resolve('app/'+config.dev.assetsSubDirectory),
         to: config.dev.assetsSubDirectory,
         ignore: ['.*']
       }

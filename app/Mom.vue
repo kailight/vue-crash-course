@@ -17,7 +17,7 @@ div.background
 .background
   display flex
   /* https://www.friddadorsch.com/wp-content/uploads/2019/02/depth-of-field-hearts-shapes-863913.jpg */
-  background-image url('background-hearts.jpg')
+  background-image url('/assets/background-hearts.jpg')
   background-repeat no-repeat
   background-position 50%
   background-size cover
@@ -41,7 +41,7 @@ div.background
         width 100%
         height 100%
         /* https://www.pexels.com/photo/woman-carrying-baby-near-grass-1261909/ */
-        background-image url('mother-child.jpg')
+        background-image url('/assets/mother-child.jpg')
         background-repeat no-repeat
         background-position 50%
         background-size cover

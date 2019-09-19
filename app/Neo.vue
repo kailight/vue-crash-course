@@ -21,7 +21,7 @@
     height 95vh
     display flex
     /*  */
-    background-image url('background-city-bar.jpg')
+    background-image url('/assets/background-city-bar.jpg')
     background-repeat no-repeat
     background-position 50%
     background-size cover
@@ -45,7 +45,7 @@
           width 100%
           height 100%
           /* https://www.pexels.com/photo/cull-pistol-establishment-during-nighttime-2260824/ */
-          background-image url('phone.jpg')
+          background-image url('/assets/phone.jpg')
           background-repeat no-repeat
           background-position center
           background-size cover
@@ -66,7 +66,7 @@
             text-align right
         .scary_image
           height 100%
-          background url('https://i.pinimg.com/originals/4b/8f/0f/4b8f0feb91add3db5162b71000df1e14.jpg')
+          background url('/assets/wabbit.jpg')
           background-repeat no-repeat
           background-position center
           background-size cover
