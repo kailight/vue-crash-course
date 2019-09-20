@@ -9,12 +9,12 @@
     "publish": "node webpack/publish/publish.js",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "test": "npm run unit",
-    "build": "webpack-dev-server --inline --progress --config webpack/build/webpack.dev.conf.js",
-    "_build" : "node webpack/build/build.js"
+    "_build" : "node webpack/build/build.js",
+    "heroku-postbuild": "webpack-dev-server --inline --progress --config webpack/build/webpack.dev.conf.js"
   },
   "dependencies": {
     "vue": "2.6.10",
-    "vue-moment-datepicker": "^1.0.5"
+    "vue-moment-datepicker": "1.0.5"
   },
   "devDependencies": {
     "normalize.css": "8.0.0",
