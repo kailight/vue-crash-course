@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config webpack/build/webpack.dev.conf.js",
+    "heroku": "webpack-dev-server --port $PORT --host 0.0.0.0 --config webpack/build/webpack.dev.conf.js",
     "publish": "node webpack/publish/publish.js",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "test": "npm run unit",
