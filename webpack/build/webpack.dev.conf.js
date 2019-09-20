@@ -86,7 +86,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   ]
 })
 
-
+/*
 module.exports = new Promise((resolve, reject) => {
   portfinder.basePort = process.env.PORT || config.dev.port
   portfinder.getPort((err, port) => {
@@ -112,15 +112,14 @@ module.exports = new Promise((resolve, reject) => {
     }
   })
 })
+*/
 
-
-/*
 module.exports = new Promise((resolve, reject) => {
 
   // Add FriendlyErrorsPlugin
   devWebpackConfig.plugins.push(new FriendlyErrorsPlugin({
     compilationSuccessInfo: {
-      messages: [`Your application is running here: http://${devWebpackConfig.devServer.host}:${port}`],
+      messages: [`Your application is running here: http://${process.env.HOST}:${process.env.HOST}`],
     },
     onErrors: config.dev.notifyOnErrors
       ? utils.createNotifierCallback()
@@ -129,4 +128,3 @@ module.exports = new Promise((resolve, reject) => {
 
   resolve(devWebpackConfig)
 })
- */
