@@ -1,5 +1,5 @@
-SET VER=13.0
-SET MSG=Lesson #13 Start
+SET VER=5.0
+SET MSG=Lesson #5 Start
 
 git tag -d %VER%
 git commit . -m "%MSG%"
