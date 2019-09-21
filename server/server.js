@@ -10,4 +10,8 @@ app.get('/', function(req, res) {
 
 app.use('/assets', express.static(path.join(public,'assets')));
 
+console.info(process.env.$PORT, process.env.PORT)
+
 app.listen(process.env.$PORT || 4004)
+
+console.info('Server is running at port :'+process.env.$PORT)
