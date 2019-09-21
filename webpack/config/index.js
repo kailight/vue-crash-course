@@ -16,7 +16,7 @@ module.exports = {
     // host: 'localhost', // can be overwritten by process.env.HOST
     host: '0.0.0.0',
     // port : 4003, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
-    port: process.env.$PORT || 4003,
+    port: process.env.PORT || 4003,
     autoOpenBrowser: false,
     errorOverlay: true,
     notifyOnErrors: true,
