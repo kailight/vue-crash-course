@@ -27,18 +27,6 @@ export default {
   data() {
     // This is the object we are working with
     return {
-      Admin : {
-        name : 'Alexander',
-      },
-      User : {
-        name : 'John'
-      },
-      showGreeting : false
-    }
-  },
-  methods: {
-    login() {
-      this.showGreeting = true
     }
   }
 }
