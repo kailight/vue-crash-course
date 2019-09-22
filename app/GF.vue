@@ -3,10 +3,10 @@ div.background
   div.content
     div.text-background
       .text
-        p.first Hey kitty
-        p Remember that jazz bar we've met for the first time, now seem ages ago...
+        p.first ♥ Hey kitty ♥
+        p Remember that bar we've met for the first time, now seems like ages ago...
         p But it is just 3 years this Saturday!
-        p See you there this Sat at 6!
+        p See you there at 6!
         p &nbsp;
         p.right John
     div.image-background
@@ -47,6 +47,8 @@ div.background
         background-repeat no-repeat
         background-position top left
         background-size cover
+        opacity 0.7
+        transition all 1s
     .text-background
       margin-left 0rem
       padding 0 2rem

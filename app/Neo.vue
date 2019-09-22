@@ -49,6 +49,7 @@
           background-repeat no-repeat
           background-position center
           background-size cover
+          opacity 0.8
       .text-background
         margin-left 0rem
         width 50%
