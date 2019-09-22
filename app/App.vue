@@ -1,6 +1,6 @@
 <template>
 <div id="app">
-  <h1>Hello World</h1>
+  <h1>Hello, {{name}}!</h1>
 </div>
 </template>
 
@@ -27,6 +27,7 @@ export default {
   data() {
     // This is the object we are working with
     return {
+      name : 'John'
     }
   }
 }
