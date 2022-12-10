@@ -12,7 +12,7 @@
   "dependencies": {
     "axios": "^0.18.1",
     "dotenv": "^8.1.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "normalize.css": "^8.0.1",
     "pug": "^2.0.4",
     "pug-loader": "^2.4.0",
